@@ -141,8 +141,13 @@ class HorizontalDataTable extends StatefulWidget {
   ///This is a wrapper controller for limiting using the available refresh and load new data controller function. Currently only refresh and load fail and complete are implemented.
   final HDTRefreshController? htdRefreshController;
 
+  ///Enable Right to Left mode
   final bool enableRTL;
 
+  final double? itemExtent;
+
+  ///[ListView] itemExtent. Specifying an itemExtent is more efficient than letting the children determine their own extent because the scrolling machinery can make use of the foreknowledge of the children's extent to save work, for example when the scroll position changes drastically.
+  ///When it is non-null, SliverFixedExtentList is used in [ListView].
   final double? itemExtent;
 
   const HorizontalDataTable({
