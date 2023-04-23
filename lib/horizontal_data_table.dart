@@ -144,8 +144,6 @@ class HorizontalDataTable extends StatefulWidget {
   ///Enable Right to Left mode
   final bool enableRTL;
 
-  final double? itemExtent;
-
   ///[ListView] itemExtent. Specifying an itemExtent is more efficient than letting the children determine their own extent because the scrolling machinery can make use of the foreknowledge of the children's extent to save work, for example when the scroll position changes drastically.
   ///When it is non-null, SliverFixedExtentList is used in [ListView].
   final double? itemExtent;
